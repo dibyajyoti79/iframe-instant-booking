@@ -1,0 +1,44 @@
+@use "../variables/fontweight" as fontweight;
+
+// standard heading
+@mixin extra-bold-text {
+    font-size: 2rem;
+    line-height: 132%;
+    letter-spacing: 0%;
+    font-weight: fontweight.$font-weight800;
+}
+
+@mixin semi-bold-text {
+    font-size: 1.875rem;
+    line-height: 132%;
+    letter-spacing: 0%;
+    font-weight: fontweight.$font-weight700;
+}
+
+@mixin bold-text {
+    font-size: 1.5rem;
+    line-height: 150%;
+    letter-spacing: 0.5%;
+    font-weight: fontweight.$font-weight600;
+}
+
+@mixin medium-text {
+    font-size: 1.125rem;
+    line-height: 142%;
+    letter-spacing: 0.5%;
+    font-weight: fontweight.$font-weight500;
+}
+
+@mixin regular-text {
+    font-size: 1rem;
+    line-height: 130%;
+    letter-spacing: 3%;
+    font-weight: fontweight.$font-weight400;
+}
+
+@mixin light-text {
+    font-size: 0.75rem;
+    line-height: 130%;
+    letter-spacing: 3%;
+    font-weight: fontweight.$font-weight300;
+}

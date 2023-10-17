@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// override default selection color
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px $light_gray;
+  // box-shadow: inset 0 0 6px $light_gray;
+  border-radius: 10px;
+  // background-color: $soft_primary_white;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  // background-color: $soft_primary_white;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  // -webkit-box-shadow: inset 0 0 6px $light_gray;
+  // box-shadow: inset 0 0 6px $light_gray;
+  // background-color: $light_gray;
+}
+
+:focus-visible {
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+}
+
+html,
+body,
+.app {
+  // color: $dark-gray;
+  font-family: $inter-font;
+  height: 100%;
+  // background-color: $primary_white;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+a {
+  cursor: pointer;
+  transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+  text-decoration: none;
+}
+
+ul,
+ul li {
+  margin: 0;
+  padding: 0;
+  text-indent: 0;
+  list-style-type: none;
+}
+
+// reset bootstrap input style
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+select,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+.hr--line {
+  display: block;
+  height: 1px;
+  border: 0;
+  // border-top: 1px solid $soft_primary_white;
+  margin: 1em 0;
+  padding: 0;
+}
+
+// CSS reset for forms
+input {
+  @extend %form-reset-input;
+}
+
+label {
+  @extend %form-reset-label;
+}
+
+select {
+  @extend %form-reset-select;
+}
+
+button {
+  @extend %form-reset-button;
+}
+
+textarea {
+  @extend %form-reset-textarea;
+}
+
+.modal-header {
+  .btn-close {
+    background-color: transparent;
+
+    &::before {
+      content: "X";
+      color: white;
+      font-weight: 800;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+  }
+}

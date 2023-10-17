@@ -1,0 +1,46 @@
+@use "../../assets/scss/variables/" as colors;
+
+
+.overlay {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.3s ease-in all;
+    z-index: 2456;
+    border-radius: 0.5rem;
+
+    .overlay__inner {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        .overlay__content {
+            left: 50%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            .spinner {
+                width: 55px;
+                height: 55px;
+                display: inline-block;
+                border-width: 4px;
+                border-color: colors.$primary_border_color;
+                border-top-color: colors.$primary_border_top_color;
+                animation: spin 1s infinite linear;
+                border-radius: 100%;
+                border-style: solid;
+            }
+        }
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}

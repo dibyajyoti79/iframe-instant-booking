@@ -1,0 +1,97 @@
+{
+  "name": "new",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.14.3",
+    "@mui/x-date-pickers": "^6.7.0",
+    "@mui/x-date-pickers-pro": "^6.7.0",
+    "@reduxjs/toolkit": "^1.9.5",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/css-modules": "^1.0.2",
+    "@types/html-pdf": "^3.0.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.35",
+    "@types/react": "^18.2.11",
+    "@types/react-dom": "^18.2.4",
+    "3d-react-carousal": "^5.0.0",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
+    "bootstrap-icons": "^1.10.5",
+    "concurrently": "^8.2.0",
+    "date-fns": "^2.30.0",
+    "dayjs": "^1.11.8",
+    "html-react-parser": "^4.2.2",
+    "html-webpack-plugin": "^5.5.3",
+    "html2canvas": "^1.4.1",
+    "html2pdf.js": "^0.10.1",
+    "include-media": "^2.0.0",
+    "jspdf": "^2.5.1",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.8.0",
+    "react-date-range": "^1.4.0",
+    "react-dates": "^21.8.0",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "^18.2.0",
+    "react-loader-spinner": "^5.3.4",
+    "react-loading-skeleton": "^3.3.1",
+    "react-lottie-player": "^1.5.4",
+    "react-material-ui-carousel": "^3.4.2",
+    "react-redux": "^8.0.7",
+    "react-router-dom": "^6.17.0",
+    "react-scripts": "5.0.1",
+    "react-select": "^5.7.3",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.1.3",
+    "react-tooltip": "^5.18.0",
+    "slick-carousel": "^1.8.1",
+    "typescript": "^4.9.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others \"react-scripts start\" \"npm run sass\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "concurrently --kill-others \"npm start\" \"npm run sass\"",
+    "sass": "sass src/assets/scss/styles.scss:src/assets/css/styles.min.css -w --style compressed"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "sass": "^1.64.2",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

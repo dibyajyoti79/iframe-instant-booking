@@ -1,0 +1,16 @@
+export default {
+  fetchCurrencyList: "/currency",
+  fetchCalender: "/min-rates",
+  getInventory: "/get-inventory",
+  getHotelInfo: "/get-hotel-info",
+  fetchInvoiceId: "/bookings",
+  fetchLocaleDetails: "/locale-details",
+  razorpayOrderId: "/razorpay-orderid",
+  razorpayResponse: "/onpage-razorpay-response",
+  easebuzzResponse: "/onpage-easebuzz-response",
+  setup: "/setup",
+  easebuzzAccessKey: "/easebuzz/access-key",
+  bookingInvoicDetails: "booking-invoice-details",
+  invoiceData: "bookingEngine/invoice-details",
+  serviceCharge: "add-on-charges",
+};
